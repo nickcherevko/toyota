@@ -1,0 +1,4 @@
+AppToyotaBundle_:
+    resource: "@AppToyotaBundle/Resources/config/routing/auto.yml"
+    prefix: /auto
+

@@ -1,0 +1,8 @@
+app_toyota:
+    resource: "@AppToyotaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+index:
+    pattern:  /
+    defaults: { _controller: AppToyotaBundle:Auto:index } 

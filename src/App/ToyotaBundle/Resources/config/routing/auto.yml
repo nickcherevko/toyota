@@ -1,0 +1,30 @@
+app_auto:
+    pattern:  /
+    defaults: { _controller: "AppToyotaBundle:Auto:index" }
+
+app_auto_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "AppToyotaBundle:Auto:show" }
+
+app_auto_new:
+    pattern:  /new
+    defaults: { _controller: "AppToyotaBundle:Auto:new" }
+
+app_auto_create:
+    pattern:  /create
+    defaults: { _controller: "AppToyotaBundle:Auto:create" }
+    requirements: { _method: post }
+
+app_auto_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "AppToyotaBundle:Auto:edit" }
+
+app_auto_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "AppToyotaBundle:Auto:update" }
+    requirements: { _method: post|put }
+
+app_auto_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "AppToyotaBundle:Auto:delete" }
+    requirements: { _method: post|delete }    
