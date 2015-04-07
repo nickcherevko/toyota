@@ -35,6 +35,8 @@ class AutoController extends Controller
             'entities' => $entities,
         );
     }
+  
+    
     /**
      * Creates a new Auto entity.
      *

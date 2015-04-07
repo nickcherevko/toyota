@@ -1,0 +1,9 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <a href="{{ path('hello', { 'name': 'my-blog-post' }) }}">
+        Читать блог {{ name }}!
+    </a>
+    <br>
+    <br>
+{% endblock %}

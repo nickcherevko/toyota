@@ -16,7 +16,9 @@
             <div class="col-lg-6">
                 <div class="row">
                     <div class="col-lg-4">
-                        <h2 id="logo">Toyota</h2>
+                        <a href="/">
+                            <h2 id="logo">Toyota</h2>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -27,12 +29,6 @@
                 {% block body %}{% endblock %}
     </div>
 
-    <div id="footer" class="container">
-        <a href="">О проекте</a>
-        <a href="">RSS</a>
-        <a href="">API</a>
-        <a href="">Партнёрам</a>
-    </div>
 
         {% block javascripts %}
             <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>

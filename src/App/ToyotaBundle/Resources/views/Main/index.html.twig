@@ -1,0 +1,16 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+        <h1>Список авто Toyota</h1>
+
+        <table class="records_list">
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.model.title }} {{ entity.title }} <a href="{{ path('main_show', { 'id': entity.id }) }}">читать...</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

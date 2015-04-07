@@ -1,0 +1,3 @@
+hello:
+    pattern:  /hello/{name}
+    defaults: { _controller: AppToyotaBundle:Hello:index }

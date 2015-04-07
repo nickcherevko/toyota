@@ -1,8 +1,13 @@
-app_toyota:
-    resource: "@AppToyotaBundle/Controller/"
-    type:     annotation
-    prefix:   /
+homepage:
+    resource: "@AppToyotaBundle/Resources/config/routing/main.yml"
+    prefix:   / 
 
-index:
-    pattern:  /
-    defaults: { _controller: AppToyotaBundle:Auto:index } 
+app_toyota:
+    resource: "@AppToyotaBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+app_toyota_hello:
+    resource: "@AppToyotaBundle/Resources/config/routing/hello.yml"
+    prefix:   /    
+    
+    

@@ -1,4 +1,4 @@
-AppToyotaBundle_:
-    resource: "@AppToyotaBundle/Resources/config/routing/auto.yml"
-    prefix: /auto
-
+app_toyota:
+    resource: "@AppToyotaBundle/Controller/"
+    type:     annotation
+    prefix:   /
